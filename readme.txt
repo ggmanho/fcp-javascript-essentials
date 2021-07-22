@@ -1,6 +1,7 @@
 강의
 2021-07-21 : Part 3. JavaScript Essentials 강의 시작
-    메모 
+메모
+    1.Node.js 
         - npm init -y   ->  npm을 사용
         
         - npm install parcel-bundler -D ->  npm으로 package 설치
@@ -56,6 +57,27 @@
                 git push origin master
                 이후에 github에서 확인하면 .gitignore파일에 정의된 파일은 관리하지않음
 
+    2.JS 시작하기
+        - ECMA 스크립트, 에크마 스크립트, ES6부터가 많이 달라졌음
+        
+        - babel(바벨) : 이전 버전의 javascript를 호환되는 버젼으로 변경해주는 컴파일러  
+        
+        - js파일 
+            1) 사용할 대상이 되는 js파일에 정의 
+                export default function getType(data) {
+                    return Object.prototype.toString.call(data).slice(8,-1)
+                }
+            2) 사용할 js파일을 import하여 사용
+                import getType from './getType'
+        
+        - 산술, 할당 연산자
+            1) 산술 연산자 (+, -, *, /, %)
+            2) 할당 연산자
+                const : 재할당 불가능
+                let : 재할당 가능
+
+        - 비교, 논리 연산자
+        
 
 
             
